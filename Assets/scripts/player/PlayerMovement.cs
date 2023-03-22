@@ -14,15 +14,18 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false; // Flag to check if the player is on the ground
     private Rigidbody2D rb; // Reference to the player's rigidbody component
     public Animator animator; // Reference to the player's animator component
+    private Vector3 originalScale;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the player's rigidbody component
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Freeze the rotation of player
+        originalScale = transform.localScale; // Save the original scale of the player
     }
 
     void Update()
     {
+        transform.localScale = originalScale;
         float moveHorizontal = Input.GetAxis("Horizontal"); // Get horizontal movement input (left/right arrow keys)
         Vector2 movement = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y); // Create a 2D vector with the player's movement direction
         rb.velocity = movement; // Set the player's velocity to the movement vector
