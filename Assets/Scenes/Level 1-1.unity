@@ -2865,7 +2865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255281276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -10}
+  m_LocalPosition: {x: 0, y: 3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2901,12 +2901,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 255281276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1851e84ed3f9274987700005d3fbb7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 425ddf3a8c7f2e447b5d2847084a1bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 404180825}
   smoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: -0.55}
+  offset: {x: 0, y: 4.5, z: -0.55}
 --- !u!4 &404180825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
@@ -24833,15 +24833,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24883,9 +24883,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774309, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774311, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Name
       value: Fraggo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.905056
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.98734534
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0050764084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.013467982
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774331, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: jumpHeight
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
