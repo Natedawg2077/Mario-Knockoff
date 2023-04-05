@@ -15,17 +15,17 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb; // Reference to the player's rigidbody component
     public Animator animator; // Reference to the player's animator component
     private Vector3 originalScale;
+    private SpriteRenderer renderer; // Reference to the
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the player's rigidbody component
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Freeze the rotation of player
-        originalScale = transform.localScale; // Save the original scale of the player
+        renderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        transform.localScale = originalScale;
         float moveHorizontal = Input.GetAxis("Horizontal"); // Get horizontal movement input (left/right arrow keys)
         Vector2 movement = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y); // Create a 2D vector with the player's movement direction
         rb.velocity = movement; // Set the player's velocity to the movement vector
@@ -37,15 +37,16 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight); // Set the player's vertical velocity to the jump height when they jump
             isGrounded = false; // Set the isGrounded flag to false to prevent double jumping
         }
+    
 
-        if (moveHorizontal > 0) // If the player is moving right
-        {
-            transform.localScale = new Vector3(1, 1, 1); // Flip the sprite to face right
-        }
-        else if (moveHorizontal < 0) // If the player is moving left
-        {
-            transform.localScale = new Vector3(-1, 1, 1); // Flip the sprite to face left
-        }
+         if (moveHorizontal > 0) // If the player is moving right face right
+         {
+          this.renderer.flipX = false;
+         }
+         else if (moveHorizontal < 0) // If the player is moving left face left
+         {
+            this.renderer.flipX = true;
+         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
