@@ -25265,25 +25265,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774311, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Name
       value: Fraggo
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Size.x
-      value: 0.9297018
+      value: 0.84138715
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Size.y
-      value: 0.96625245
+      value: 0.9044324
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Offset.x
-      value: 0.0027823448
+      value: 0.0045481324
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0018934011
+      value: -0.017241254
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774331, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: moveSpeed

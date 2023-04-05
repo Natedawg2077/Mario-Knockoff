@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         }
     
 
-         if (moveHorizontal > 0) // If the player is moving right face right
+         if (moveHorizontal > 0) // If the player is moving right face right 
          {
           this.renderer.flipX = false;
          }
