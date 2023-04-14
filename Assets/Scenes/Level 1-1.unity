@@ -25616,18 +25616,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.72
       objectReference: {fileID: 0}
@@ -25667,41 +25655,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774311, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Name
       value: Fraggo
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774329, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_GravityScale
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_Size.x
-      value: 0.84138715
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_Size.y
-      value: 0.9044324
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0045481324
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774330, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.017241254
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774331, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6876729553691774331, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-      propertyPath: jumpHeight
-      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
