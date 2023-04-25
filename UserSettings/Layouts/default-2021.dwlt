@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 739
     height: 393
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 15}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 98
+  controlID: 26
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 151
+  controlID: 69
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 56
+  controlID: 25
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 57
+  controlID: 79
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -359,7 +359,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 36284
+  m_LastSelectedObjectID: -6464
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -396,6 +396,8 @@ MonoBehaviour:
     - {fileID: -3879453156161662278, guid: b45fef91fcf3c404b9baa4de78e7236e, type: 2}
     - {fileID: -550706093056085027, guid: 648eb9c32f30b6e49bf64d877ec05a78, type: 2}
     - {fileID: -532400836124777360, guid: e95ae25267930684582496eaca84a137, type: 2}
+    - {fileID: -6215409802506555390, guid: 66234e2dd36a7eb43bfd783a0c6978a7, type: 2}
+    - {fileID: -1249585593692785852, guid: 8599111fd00d08e4fac63422b1986a4b, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.68833333
       e01: 0
@@ -493,10 +495,42 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 0.5511301
+      e01: 0
+      e02: 0
+      e03: -178.80594
+      e10: 0
+      e11: 0.5511301
+      e12: 0
+      e13: 108.171646
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.60559946
+      e01: 0
+      e02: 0
+      e03: -126.54384
+      e10: 0
+      e11: 0.60559946
+      e12: 0
+      e13: 103.81237
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: e95ae25267930684582496eaca84a137, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 8599111fd00d08e4fac63422b1986a4b, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -532400836124777360, guid: e95ae25267930684582496eaca84a137, type: 2}
+  - m_Target: {fileID: -1249585593692785852, guid: 8599111fd00d08e4fac63422b1986a4b, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -585,36 +619,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Pixel Adventure 1/Pixel Adventure 2/Assets/Enemies
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Pixel Adventure 1/Pixel Adventure 2/Assets/Enemies/BlueBird
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\614057\Documents\GitHub\Mario-Knockoff
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 420}
-    m_SelectedIDs: 2a6d0000
-    m_LastClickedID: 27946
-    m_ExpandedIDs: 00000000be6c0000c06c0000c26c0000c46c0000c66c0000c86c0000ca6c0000cc6c0000ce6c0000d06c0000f06c0000146d0000
+    scrollPos: {x: 0, y: 248}
+    m_SelectedIDs: 166e0000
+    m_LastClickedID: 28182
+    m_ExpandedIDs: 000000000c6e00000e6e0000106e0000126e0000146e0000166e0000186e00001a6e00001c6e00001e6e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Checkpoints
-      m_OriginalName: Checkpoints
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 27884
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
@@ -628,7 +662,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be6c0000c06c0000c26c0000c46c0000c66c0000c86c0000ca6c0000cc6c0000ce6c0000d06c0000
+    m_ExpandedIDs: 000000000c6e00000e6e0000106e0000126e0000146e0000166e0000186e00001a6e00001c6e00001e6e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -655,7 +689,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000052240000c65e0000e66b00008a6c0000546e0000986d00002c6e00002c6f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -758,7 +792,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 88eafffff4ebffff30fbffff025a00007a8d0000b48d0000
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1029,9 +1063,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.767365, y: -0.72967637, z: 1.2531548}
+    m_Target: {x: -10.346799, y: -0.7890694, z: 1.3164212}
     speed: 2
-    m_Value: {x: -11.767365, y: -0.72967637, z: 1.2531548}
+    m_Value: {x: -10.22688, y: -0.8592221, z: 1.3133812}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1082,9 +1116,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.7201514
+    m_Target: 6.4514556
     speed: 2
-    m_Value: 4.7201514
+    m_Value: 6.7554507
   m_Ortho:
     m_Target: 1
     speed: 2
