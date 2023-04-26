@@ -15,13 +15,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb; // Reference to the player's rigidbody component
     public Animator animator; // Reference to the player's animator component
     private Vector3 originalScale;
-    private SpriteRenderer renderer; // Reference to the
+    private SpriteRenderer sRenderer; // Reference to the
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Get the player's rigidbody component
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Freeze the rotation of player
-        renderer = GetComponent<SpriteRenderer>();
+        sRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -41,11 +41,11 @@ public class PlayerMovement : MonoBehaviour
 
          if (moveHorizontal > 0) // If the player is moving right face right 
          {
-          this.renderer.flipX = false;
+          this.sRenderer.flipX = false;
          }
          else if (moveHorizontal < 0) // If the player is moving left face left
          {
-            this.renderer.flipX = true;
+            this.sRenderer.flipX = true;
          }
     }
 
