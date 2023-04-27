@@ -1753,6 +1753,7 @@ GameObject:
   - component: {fileID: 1039072677}
   - component: {fileID: 1039072676}
   - component: {fileID: 1039072675}
+  - component: {fileID: 1039072679}
   - component: {fileID: 1039072678}
   m_Layer: 5
   m_Name: Button (Legacy)
@@ -1826,7 +1827,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1039072678}
+      - m_Target: {fileID: 1039072679}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
         m_Mode: 3
@@ -1886,6 +1887,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0874564475ea11c4ca15980c54262278, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1039072679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039072673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612228f263c6c884d95f3be8637390a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1102403878
@@ -3314,7 +3327,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.23064259, g: 0.5325684, b: 0.6886792, a: 0}
+  m_BackGroundColor: {r: 0.2784314, g: 0.7607844, b: 0.8588236, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
