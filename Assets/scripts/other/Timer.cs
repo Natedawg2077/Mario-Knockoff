@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
     public Text timerText;
     public Text gameOverText;
     private float startTime;
-    private float totalTime = 10.0f;
+    private float totalTime = 90.0f;
 
     void Start()
     {
@@ -19,8 +20,8 @@ public class Timer : MonoBehaviour
         if (timeLeft < 0.0f)
         {
             timeLeft = 0.0f;
-            Time.timeScale = 0.0f; // Freeze the game
-            gameOverText.text = "Game Over"; // Show the "Game Over" message
+            //SceneManager.LoadScene("LoseScene", LoadSceneMode.Additive);
+            //SceneManager.UnloadSceneAsync("")
         }
         else
         {
