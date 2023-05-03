@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8685411665810973216}
   m_Layer: 0
   m_Name: kill colliders
-  m_TagString: Untagged
+  m_TagString: OutOfBounds
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,15 +42,15 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 265.02283, y: -0.005537033}
+  - {x: -92.45619, y: -0.4363289}
+  - {x: 322.5091, y: -0.33278275}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_UseAdjacentStartPoint: 1
+  m_UseAdjacentEndPoint: 1
