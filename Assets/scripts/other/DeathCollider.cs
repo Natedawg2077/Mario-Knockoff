@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-//Keegan 5/3/2023-_/__/2023 WIP Do not connect to anything unless its a test level
+//Keegan 05/03/2023-05/04/2023 
 
 
 
@@ -20,11 +21,15 @@ public class DeathCollider : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other) // Use "Collider2D" instead of "Collider" for 2D games
+    private void OnCollisionEnter2D(Collision2D otherObject) // Use "Collider2D" instead of "Collider" for 2D games
     {
-        if (other.CompareTag("Player")) 
+        string otherTag = otherObject.gameObject.tag;
+
+        if (otherTag.Equals("Player")) 
         {
-            SceneManager.LoadScene("LoseScene");
+            
+            SceneManager.LoadScene("Menu");
+           
         }
     }
 }

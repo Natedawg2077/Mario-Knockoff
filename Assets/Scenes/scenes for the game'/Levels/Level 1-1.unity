@@ -3302,6 +3302,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1176778980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8685411665810973219, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
+  m_PrefabInstance: {fileID: 5957960246998821554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1176778981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176778980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee02b73c42258f14eb595736cab2eaf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1409097335
 GameObject:
   m_ObjectHideFlags: 0
@@ -30339,6 +30356,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8685411665810973216, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8685411665810973217, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
       propertyPath: m_RootOrder
       value: 3
