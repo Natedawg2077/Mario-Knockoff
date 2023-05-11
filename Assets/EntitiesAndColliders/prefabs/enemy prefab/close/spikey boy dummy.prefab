@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 663168858950545778}
   m_Layer: 0
   m_Name: spikey boy dummy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
