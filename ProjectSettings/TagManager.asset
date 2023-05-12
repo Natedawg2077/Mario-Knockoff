@@ -6,8 +6,12 @@ TagManager:
   tags:
   - Ground
   - LevelDone
+<<<<<<< Updated upstream
   - OutOfBounds
   - Enemy
+=======
+  - LevelDoor
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
