@@ -15,7 +15,11 @@ public class RestartButton : MonoBehaviour
             SceneManager.UnloadSceneAsync(currentScene);
             SceneManager.LoadScene(sceneName);
             SceneManager.LoadScene("InLevel", LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("Paused");
+            if(sceneName == "Paused")
+            {
+                SceneManager.UnloadSceneAsync("Paused");
+            }
+            Time.timeScale = 1;
         }
 
     }
