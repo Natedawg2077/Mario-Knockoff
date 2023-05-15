@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - Ground
+  - LevelDone
+  - OutOfBounds
+  - Enemy
+>>>>>>> parent of 3b5ee2b (Merge branch 'main' of https://github.com/Natedawg2077/Mario-Knockoff)
   layers:
   - Default
   - TransparentFX

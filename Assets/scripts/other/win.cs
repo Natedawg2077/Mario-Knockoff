@@ -6,12 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class win : MonoBehaviour
 {
-<<<<<<< Updated upstream
-=======
-    public Text text; // Reference to the text UI component in the Inspector
-    
-    
->>>>>>> Stashed changes
 
     void Start()
     {
