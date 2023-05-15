@@ -9,8 +9,9 @@ public class RestartButton : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+        Time.timeScale = 1;
 
-        if(sceneName != "Paused")
+        if (sceneName != "Paused")
         {
             SceneManager.UnloadSceneAsync(currentScene);
             SceneManager.LoadScene(sceneName);
@@ -19,8 +20,8 @@ public class RestartButton : MonoBehaviour
             {
                 SceneManager.UnloadSceneAsync("Paused");
             }
-            Time.timeScale = 1;
+            
         }
-
+        Time.timeScale = 1;
     }
 }

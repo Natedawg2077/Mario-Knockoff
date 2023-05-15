@@ -9,6 +9,7 @@ public class PauseButton : MonoBehaviour
     {
         //Loads the pause menu scene and unloads the InLevel(this scene) scene used for UI
         SceneManager.LoadScene("Paused", LoadSceneMode.Additive);
+        Time.timeScale = 0.0f;
         SceneManager.UnloadSceneAsync("InLevel");
     }
 }
