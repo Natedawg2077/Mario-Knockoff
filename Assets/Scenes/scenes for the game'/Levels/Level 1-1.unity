@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 47557890}
   m_Layer: 0
   m_Name: Timer
-  m_TagString: Untagged
+  m_TagString: Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27041,7 +27041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412f4070ea55536469849e3e09ffa627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
 --- !u!70 &1796053787
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -27066,7 +27065,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796053785}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -360.73, y: -257.08, z: -1.1330572}
+  m_LocalPosition: {x: -361.24, y: -264.48, z: -1.1330572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27124,6 +27123,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774309, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876729553691774309, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774311, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_Name
       value: Fraggo
@@ -27149,6 +27156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 360367175}
   gameOverText: {fileID: 0}
+  player: {fileID: 0}
+  stillAlive: 1
 --- !u!1 &2145447105
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,5 +12,6 @@ public class ContinueToNextLevel : MonoBehaviour
 
         SceneManager.LoadSceneAsync(sceneNum + 1, LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync(currentScene);
+        SceneManager.UnloadSceneAsync("WinScene");
     }
 }

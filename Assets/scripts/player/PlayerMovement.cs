@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false; // Flag to check if the player is on the ground
     private Rigidbody2D rb; // Reference to the player's rigidbody component
     public Animator animator; // Reference to the player's animator component
+    public bool notLose = true;
     private Vector3 originalScale;
     private SpriteRenderer sRenderer; // Reference to the
 
@@ -26,27 +27,33 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal"); // Get horizontal movement input (left/right arrow keys)
-        Vector2 movement = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y); // Create a 2D vector with the player's movement direction
-        rb.velocity = movement; // Set the player's velocity to the movement vector
-        animator.SetFloat("Speed", Mathf.Abs(moveHorizontal * moveSpeed)); // Set the player's velocity to the movement vector
-        //jump
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        
+        //player can only move if he has not lost
+        if (notLose)
         {
-            animator.SetBool("IsJumping",true);
-            rb.velocity = new Vector2(rb.velocity.x, jumpHeight); // Set the player's vertical velocity to the jump height when they jump
-            isGrounded = false; // Set the isGrounded flag to false to prevent double jumping
-        }
-    
+            float moveHorizontal = Input.GetAxis("Horizontal"); // Get horizontal movement input (left/right arrow keys)
+            Vector2 movement = new Vector2(moveHorizontal * moveSpeed, rb.velocity.y); // Create a 2D vector with the player's movement direction
+            rb.velocity = movement; // Set the player's velocity to the movement vector
+            animator.SetFloat("Speed", Mathf.Abs(moveHorizontal * moveSpeed)); // Set the player's velocity to the movement vector
 
-         if (moveHorizontal > 0) // If the player is moving right face right 
-         {
-          this.sRenderer.flipX = false;
-         }
-         else if (moveHorizontal < 0) // If the player is moving left face left
-         {
-            this.sRenderer.flipX = true;
-         }
+            //jump
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                animator.SetBool("IsJumping", true);
+                rb.velocity = new Vector2(rb.velocity.x, jumpHeight); // Set the player's vertical velocity to the jump height when they jump
+                isGrounded = false; // Set the isGrounded flag to false to prevent double jumping
+            }
+
+
+            if (moveHorizontal > 0) // If the player is moving right face right 
+            {
+                this.sRenderer.flipX = false;
+            }
+            else if (moveHorizontal < 0) // If the player is moving left face left
+            {
+                this.sRenderer.flipX = true;
+            }
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
