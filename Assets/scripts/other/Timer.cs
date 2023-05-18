@@ -29,6 +29,7 @@ public class Timer : MonoBehaviour
                 SceneManager.UnloadSceneAsync("InLevel");
                 player = GameObject.FindWithTag("Player");
                 gameOverText.GetComponent<Text>().text = "Too Slow!";
+                stillAlive = false;
             }
             else
             {

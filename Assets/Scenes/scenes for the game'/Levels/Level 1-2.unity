@@ -26410,15 +26410,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -26436,7 +26436,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fraggo
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2621737506451924879, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
 --- !u!1 &1929834475 stripped
 GameObject:
@@ -26698,6 +26699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 1814859147}
   gameOverText: {fileID: 0}
+  player: {fileID: 0}
+  stillAlive: 1
 --- !u!1001 &2050835870
 PrefabInstance:
   m_ObjectHideFlags: 0

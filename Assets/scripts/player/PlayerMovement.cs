@@ -5,7 +5,7 @@ using UnityEngine;
 // March 15, 2023
 
 /// <summary>
-    // For the movement to work make sure you add the "Ground" to collider or your ground Object, or it will throw a error.
+    // For the movement to work make sure you add the "Ground" to collider or your ground Object, or it will throw an error.
 /// </summary>
 public class PlayerMovement : MonoBehaviour
 {

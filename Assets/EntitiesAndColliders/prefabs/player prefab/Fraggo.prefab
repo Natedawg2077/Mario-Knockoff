@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6876729553691774331}
   - component: {fileID: 6876729553691774329}
   - component: {fileID: 6876729553691774330}
+  - component: {fileID: 2621737506451924879}
   m_Layer: 0
   m_Name: Fraggo
   m_TagString: Player
@@ -123,6 +124,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpHeight: 18
   animator: {fileID: 6876729553691774310}
+  notLose: 1
 --- !u!50 &6876729553691774329
 Rigidbody2D:
   serializedVersion: 4
@@ -170,3 +172,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.84138715, y: 0.9044324}
   m_EdgeRadius: 0
+--- !u!114 &2621737506451924879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6876729553691774311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e3cb8d73469e946bf29bf1b504de04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  gameOverText: {fileID: 0}
+  player: {fileID: 0}
+  stillAlive: 1

@@ -27079,6 +27079,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2621737506451924879, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 360367175}
     - target: {fileID: 6876729553691774308, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -27137,27 +27141,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
---- !u!1 &1831488639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6876729553691774311, guid: ce4708a1b74bee2408827f3a282b288c, type: 3}
-  m_PrefabInstance: {fileID: 1814732557}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1831488645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831488639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39e3cb8d73469e946bf29bf1b504de04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerText: {fileID: 360367175}
-  gameOverText: {fileID: 0}
-  player: {fileID: 0}
-  stillAlive: 1
 --- !u!1 &2145447105
 GameObject:
   m_ObjectHideFlags: 0
