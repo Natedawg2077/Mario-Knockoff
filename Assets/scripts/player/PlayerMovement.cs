@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 // Satij 
 // March 15, 2023
 
@@ -23,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); // Get the player's rigidbody component
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Freeze the rotation of player
         sRenderer = GetComponent<SpriteRenderer>();
+
+        Debug.Log(SceneManager.sceneCountInBuildSettings);
+        SceneManager.UnloadSceneAsync("WinScene");
+        SceneManager.UnloadSceneAsync("LoseScene");
     }
 
     void Update()

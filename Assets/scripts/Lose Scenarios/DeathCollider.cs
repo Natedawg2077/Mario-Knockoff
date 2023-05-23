@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 public class DeathCollider : MonoBehaviour
 {
     public GameObject player;
-
+    public GameObject loseText;
 
     // Start is called before the first frame update
     void Start()
@@ -43,5 +43,8 @@ public class DeathCollider : MonoBehaviour
             SceneManager.LoadSceneAsync("LoseScene", LoadSceneMode.Additive);
             SceneManager.UnloadSceneAsync("InLevel");
         }
+
+        loseText = GameObject.FindWithTag("LoseText");
+        //loseText.GetComponent<Text>(). = "You Fell!";
     }
 }

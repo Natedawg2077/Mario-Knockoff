@@ -197,6 +197,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8685411665810973216, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
+      propertyPath: m_Points.Array.data[0].x
+      value: -56.352524
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685411665810973216, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
+      propertyPath: m_Points.Array.data[0].y
+      value: -1.6200542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685411665810973216, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
+      propertyPath: m_Points.Array.data[1].x
+      value: 322.9037
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685411665810973216, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
+      propertyPath: m_Points.Array.data[1].y
+      value: -1.516509
+      objectReference: {fileID: 0}
     - target: {fileID: 8685411665810973217, guid: bd3bfda27acb8f04b91c7e656615b50e, type: 3}
       propertyPath: m_RootOrder
       value: 2
