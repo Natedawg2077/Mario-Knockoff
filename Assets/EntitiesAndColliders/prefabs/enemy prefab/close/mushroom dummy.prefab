@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 9147031995861668619}
   - component: {fileID: 9147031995861668618}
   - component: {fileID: 9147031995861668613}
+  - component: {fileID: 4480547268120486960}
+  - component: {fileID: 7198261069455437301}
   m_Layer: 0
   m_Name: mushroom dummy
   m_TagString: Enemy
@@ -118,10 +120,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0011019707, y: -0.05955188}
+  m_Offset: {x: -0.0021304488, y: -0.057494834}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +134,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2560916, y: 0.20089623}
+  m_Size: {x: 0.270491, y: 0.20501032}
   m_EdgeRadius: 0
 --- !u!95 &9147031995861668613
 Animator:
@@ -154,3 +156,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4480547268120486960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9147031995861668612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6bc94d2a0001b48b53e94946380010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpBoostPower: 50
+--- !u!61 &7198261069455437301
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9147031995861668612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0010285378, y: -0.059655055}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25828767, y: 0.20068988}
+  m_EdgeRadius: 0

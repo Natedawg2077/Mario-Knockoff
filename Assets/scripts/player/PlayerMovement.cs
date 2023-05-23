@@ -25,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;//Freeze the rotation of player
         sRenderer = GetComponent<SpriteRenderer>();
 
-        Debug.Log(SceneManager.sceneCountInBuildSettings);
         SceneManager.UnloadSceneAsync("WinScene");
         SceneManager.UnloadSceneAsync("LoseScene");
     }
