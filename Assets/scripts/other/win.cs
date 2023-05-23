@@ -16,8 +16,13 @@ public class win : MonoBehaviour
     {
         if (other.CompareTag("Player")) // Replace "Player" with the tag of your player object
         {
-            SceneManager.LoadScene(3, LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync(1);
+            SceneManager.LoadScene("WinScene", LoadSceneMode.Additive);
+
+            Scene currentScene = SceneManager.GetActiveScene();
+            int sceneNum = currentScene.buildIndex;
+            if (sceneNum == 1)
+                SceneManager.UnloadSceneAsync("InLevel");
+
             Time.timeScale = 0.0f;
         }
     }
