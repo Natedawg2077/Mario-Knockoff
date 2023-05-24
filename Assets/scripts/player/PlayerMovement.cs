@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public bool notLose = true;
     private Vector3 originalScale;
     private SpriteRenderer sRenderer; // Reference to the
+    public AudioSource mySound;
 
     void Start()
     {
@@ -27,11 +28,13 @@ public class PlayerMovement : MonoBehaviour
 
         SceneManager.UnloadSceneAsync("WinScene");
         SceneManager.UnloadSceneAsync("LoseScene");
+        mySound = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        
+        // if (notLose) { return; }
+
         //player can only move if he has not lost
         if (notLose)
         {
@@ -43,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
             //jump
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             {
+                mySound.Play();
                 animator.SetBool("IsJumping", true);
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight); // Set the player's vertical velocity to the jump height when they jump
                 isGrounded = false; // Set the isGrounded flag to false to prevent double jumping

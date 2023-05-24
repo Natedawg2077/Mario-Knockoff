@@ -23,7 +23,7 @@ public class MushroomScript : MonoBehaviour
         if (otherObject.gameObject.CompareTag("Player"))
         {
             otherRBody = otherObject.GetComponent<Rigidbody2D>();
-            otherRBody.AddForce(0, 0, jumpBoostPower, ForceMode2D.Impulse);
+            //otherRBody.AddForce(0, 0, jumpBoostPower, ForceMode2D.Impulse);
         }
     }
 }
